@@ -1,11 +1,7 @@
 titulo = '\n****** PROJETO FINAL DO CURSO DE INTRODUÇÃO Á PROGRAMAÇÃO PYTHON ******\n'
 print(titulo.center(20,'*'))
 
-novo = input('Deseja iniciar o cadastro das notas do aluno (S/N)? ').upper()
-while (novo != 'S' and novo != 'N'):
-    print('Opção Invalida')
-    novo = input('Informe "S" para Sim e "N" para Não: ').upper()
-
+  
 totalAlunos = 0
 totalAprovados_F = 0
 totalAprovados_M = 0
@@ -16,11 +12,22 @@ totalReprovados_M = 0
 totalAlunos_Feminino = 0
 totalAlunos_Masculino = 0
 
-while (novo == 'S'):
-    totalAlunos += 1
-    nome_aluno = input('\nInforme o nome do aluno: ')
+while True:
+    novo = input('Deseja iniciar o cadastro das notas do aluno (S/N)? ').upper()
+    if novo == 'S' or novo == 's':
+        totalAlunos += 1
+        nome_aluno = input('\nInforme o nome do aluno: ')
+        sexo_aluno = input('Informe o sexo do aluno (F/M): ').upper()
+        if sexo_aluno != 'F' and sexo_aluno != 'M':
+            raise EnvironmentError
+    
+    else:
+        break
+    
+  
 
-    sexo_aluno = input('Informe o sexo do aluno (F/M): ').upper()
+while (novo == 'S'):
+    
     while (sexo_aluno != 'F' and sexo_aluno != 'M'):
         print('Opção Invalida')
         sexo_aluno = input('Informe "F" para o sexo Feminino e "M" para o sexo Masculino: ').upper()
