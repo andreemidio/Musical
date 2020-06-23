@@ -12,6 +12,23 @@ totalReprovados_M = 0
 totalAlunos_Feminino = 0
 totalAlunos_Masculino = 0
 
+
+"""
+Objetivo é criar um dicionário armazenando o dado de cada usuário, e posteriormente fazer as computações do necessárias.
+{
+    nome_aluno: 'Andre',
+    sexo_aluno: 'Masculino,
+    nota1 : 5,
+    nota2: 8,
+    nota3 : 1
+    media : 4.8
+    status : 'Reprovado'
+}
+
+
+"""
+
+
 while True:
     novo = input('Deseja iniciar o cadastro das notas do aluno (S/N)? ').upper()
     if novo == 'S' or novo == 's':
@@ -19,7 +36,7 @@ while True:
         nome_aluno = input('\nInforme o nome do aluno: ')
         sexo_aluno = input('Informe o sexo do aluno (F/M): ').upper()
         if sexo_aluno != 'F' and sexo_aluno != 'M':
-            raise EnvironmentError
+            raise Exception
     
     else:
         break
