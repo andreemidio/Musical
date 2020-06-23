@@ -10,8 +10,8 @@
     "sexo_aluno": "Masculino",
     "nota1" : 5,
     "nota2": 8,
-    "nota3" : 1
-    "media" : 4.8
+    "nota3" : 1,
+    "media" : 4.8,
     "status" : "Reprovado"
 }
 ```
