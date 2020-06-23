@@ -1,9 +1,10 @@
 # Musical
 
-#Começo da refatoração do código da Vanessa
+# Começo da refatoração do código da Vanessa
 
-#Processo de refatoração, em que o objetivo é usar uma estrutura de dados mais enxuta como dicionário.
+# Processo de refatoração, em que o objetivo é usar uma estrutura de dados mais enxuta como dicionário.
 
+```json
 {
     nome_aluno: 'Andre',
     sexo_aluno: 'Masculino,
@@ -13,3 +14,4 @@
     media : 4.8
     status : 'Reprovado'
 }
+```
